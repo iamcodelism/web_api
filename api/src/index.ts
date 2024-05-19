@@ -15,7 +15,7 @@ app.post("/api/greet", async (c) => {
   return c.json({
     message: `Hello, ${
       body.name
-    } at ${now.toLocaleString()} your APP_KEY is: ${APP_KEY}`,
+    } requested at ${now.toLocaleString()} your APP_KEY is: ${APP_KEY}`,
   });
 });
 app.get("/", (c) => {
